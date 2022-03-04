@@ -1,0 +1,8 @@
+.burger .burger__button {
+  display: none;
+}
+.burger .burger__button.active {
+  display: block;
+}
+
+/*# sourceMappingURL=burger.css.map */

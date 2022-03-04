@@ -1,0 +1,55 @@
+.burger {
+
+  .burger__button {
+    position: relative;
+    width: 3.5rem;
+    height: 2rem;
+
+    span {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+
+      width: 100%;
+      height: 0.4rem;
+
+      background-color: $light_blue_color;
+      border-radius: 0.1rem;
+    }
+    &:before,&:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 0.4rem;
+
+      background-color: $light_blue_color;
+      border-radius: 0.1rem;
+    }
+    &:before {
+      top: 0;
+    }
+    &:after {
+      bottom: 0;
+    }
+    @media (min-width: convertPx-em(700)) {
+      display: none;
+    }
+  }
+  .burger__menu {
+
+    @media (max-width: convertPx-em(700)) {
+      transition: all .4s ease;
+      position: fixed;
+      background-color: white;
+      top: 0;
+      left: 100%;
+
+      &.active {
+        left: 0;
+      }
+    }
+  }
+
+}

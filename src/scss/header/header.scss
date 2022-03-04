@@ -1,0 +1,233 @@
+.header {
+  color: $black_color;
+  font-size: 1.6rem;
+  line-height: 118.75%;
+
+  .header__body {
+    margin: 2.3rem 0 0 0;
+
+    @media (max-width: convertPx-em(768)) {
+      margin: 1rem 0 0 0;
+    }
+    .header__burger{
+      .header__burger-menu {
+        display: grid;
+        grid-template-columns: min-content auto auto;
+        grid-template-rows: auto auto;
+        align-items: center;
+        gap: 2.3rem 0;
+
+        grid-template-areas:
+          "logo buttons contacts"
+          "menu menu menu";
+        @media (max-width: convertPx-em(768)) {
+          grid-template-columns: min-content auto;
+          grid-template-rows: auto auto auto;
+          grid-template-areas:
+            "logo contacts"
+            "buttons buttons"
+            "menu menu";
+          gap: 1rem 0;
+          margin: 1rem 0 0 0;
+        }
+        @media (max-width: convertPx-em(700)) {
+          grid-template-columns: auto;
+          max-width: 40rem;
+          grid-template-rows: repeat(4, auto);
+          grid-template-areas:
+            "contact"
+            "buttons buttons"
+            "menu menu";
+        }
+        .header__logo {
+          grid-area: logo;
+          margin: 0 2rem 0 0;
+        }
+        .header__buttons {
+          grid-area: buttons;
+
+          .header__buttons-list {
+            display: flex;
+            justify-content: left;
+            flex-wrap: wrap;
+
+            @media (max-width: convertPx-em(769)) {
+              padding: 1.4rem 0 0.8rem 0;
+              border-top: 1px solid $light_green_color;
+            }
+            li {
+
+              &:not(:last-child) {
+                margin: 0 2.4rem 0 0;
+              }
+              @media (max-width: convertPx-em(1220)) {
+                &:not(:last-child) {
+                  margin: 0 2.4rem 1rem 0;
+                }
+              }
+              @media (max-width: convertPx-em(900)) {
+                &:not(:last-child) {
+                  margin: 0 1rem 1rem 0;
+                }
+              }
+              @media (max-width: convertPx-em(769)) {
+                &:not(:last-child) {
+                  margin: 0 4rem 0 0;
+                }
+              }
+              a {
+                transition: 0.3s ease 0s;
+                &:hover {
+                  color: #234875;
+                }
+              }
+            }
+
+          }
+        }
+        .header__contacts {
+          grid-area: contacts;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &>*:not(:last-child) {
+            margin: 0 3.3rem 0 0;
+          }
+          @media (max-width: convertPx-em(900)) {
+            &>*:not(:last-child) {
+              margin: 0 1rem 0 0;
+            }
+          }
+          .header__contacts-number {
+            display: flex;
+            flex-direction: column;
+          }
+          .header__telephone {
+            position: relative;
+
+            padding: 0 0 0 2rem;
+            margin: 0 0 0.5rem 0;
+
+            font-weight: bold;
+            font-size: 1.8rem;
+            line-height: 116%;
+            white-space: nowrap;
+
+            transition: 0.3s ease 0s;
+
+            &:hover {
+              color: #234875;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              display: inline-block;
+              vertical-align: middle;
+              width: 1.8rem;
+              height: 1.8rem;
+              top: 50%;
+              left: 0;
+              transform: translate(0, -50%);
+              background: url('../img/mobile.svg') no-repeat center / contain;
+            }
+            @media (max-width: convertPx-em(768)) {
+              font-size: 1.5rem;
+              margin: 0 0 0.3rem 0;
+            }
+          }
+          .header__contacts-text {
+            font-size: 1.4rem;
+            line-height: 114%;
+
+            @media (max-width: convertPx-em(768)) {
+              font-size: 1.2rem;
+            }
+          }
+          .header__contacts-messengers {
+            display: flex;
+            justify-content: space-between;
+
+            &>*:not(:last-child) {
+              margin: 0 1.5rem 0 0;
+            }
+            a {
+              min-width: 3rem;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+              }
+            }
+            @media (min-width: convertPx-em(769)){
+              display: none;
+            }
+            @media  (max-width: convertPx-em(425)) {
+              display: none;
+            }
+          }
+          .header__contacts-call {
+            a {
+              padding: 1.3rem 2.2rem 1.3rem 2.4rem;
+              color: $light_green_color;
+            }
+          }
+        }
+        .header__menu {
+          grid-area: menu;
+          border: 1px solid $light_green_color;
+          border-right: none;
+          border-left: none;
+
+          .header__list {
+            &>li {
+              position: relative;
+              max-width: 20%;
+              transition: 0.3s ease 0s;
+
+              &:hover {
+                background-color: $focus_light_green_color;
+              }
+            }
+            .header__link {
+              display: flex;
+              justify-content: center;
+              padding: 2.1rem;
+
+              font-weight: 500;
+
+              @media (max-width: convertPx-em(768)) {
+                max-width: 10rem;
+                font-size: 1.4rem;
+                padding: .9rem;
+              }
+              span {
+                text-align: left;
+              }
+            }
+            .header__sub-menu {
+              top: 100%;
+              padding: 1.5rem;
+              &>li {
+
+              }
+              .header__sub-menu-link {
+                display: block;
+                padding: 1.3rem;
+                border: 2px solid transparent;
+                border-radius: 0.3rem;
+
+                transition: 0.3s ease 0s;
+
+                &:hover {
+                  border: 2px solid $light_green_color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

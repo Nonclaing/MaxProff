@@ -1,0 +1,30 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4rem 2.3rem;
+
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 118.75%;
+  text-align: center;
+  color: white;
+
+  background-color: $light_green_color;
+  border-radius: 0.4rem;
+
+  transition: all 0.3s ease;
+}
+.button_white {
+  padding: 1.4rem 6rem;
+  color: $light_green_color;
+
+  background-color: white;
+  border: 0.2rem solid $light_green_color;
+  border-radius: .4rem;
+
+  &:hover {
+    background-color: $light_green_color;
+    color: white;
+  }
+}
