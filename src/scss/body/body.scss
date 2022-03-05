@@ -6,8 +6,10 @@ body, html{
   width: 100%;
   height: 100%;
 }
-body.lock {
-  overflow: hidden;
+@media (max-width: convertPx-em(700)) {
+  body.lock {
+    overflow: hidden;
+  }
 }
 .wrapper {
   width: 100%;
@@ -18,7 +20,7 @@ body.lock {
 .container {
   width: 100%;
   height: 100%;
-  padding: 0 1rem;
+  padding: 0 1.6rem;
   max-width: 122rem;
   margin: 0 auto;
 }
