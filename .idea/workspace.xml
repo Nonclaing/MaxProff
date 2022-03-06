@@ -5,17 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c103be59-d4f4-4b7c-b557-110b27cee1dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/img/builder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/consent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/cooperation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/guarantee.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/body/body.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/body/body.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/burger/burger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/burger/burger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/button/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/button/button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/menu/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/menu/menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/null-style/null-style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/null-style/null-style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MaxProff/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/MaxProff/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MaxProff/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/MaxProff/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MaxProff/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MaxProff/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/main/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/header/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/header/_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/main/_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/main/_main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,17 +63,17 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Shedrin\Desktop\web\web sites\MaxProff\src\img" />
-      <recent name="C:\Users\Shedrin\Desktop\web\web sites\MaxProff\src\templates\header" />
-      <recent name="C:\Users\Shedrin\Desktop\web\web sites\MaxProff\src\templates" />
-      <recent name="C:\Users\Shedrin\Desktop\web\web sites\MaxProff\src\scss\null-style" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Shedrin\Desktop\web\web sites\MaxProff\MaxProff\img" />
       <recent name="C:\Users\Shedrin\Desktop\web\web sites\MaxProff\src\js" />
       <recent name="C:\Users\Shedrin\Desktop\web\web sites\MaxProff\src" />
       <recent name="C:\Users\Shedrin\Desktop\web\web sites\MaxProff\src\scss" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Shedrin\Desktop\web\web sites\MaxProff\src\img" />
+      <recent name="C:\Users\Shedrin\Desktop\web\web sites\MaxProff\src\templates\header" />
+      <recent name="C:\Users\Shedrin\Desktop\web\web sites\MaxProff\src\templates" />
+      <recent name="C:\Users\Shedrin\Desktop\web\web sites\MaxProff\src\scss\null-style" />
     </key>
   </component>
   <component name="RunManager">
@@ -101,6 +103,7 @@
       <workItem from="1646406996427" duration="5385000" />
       <workItem from="1646412513632" duration="6264000" />
       <workItem from="1646482788368" duration="15117000" />
+      <workItem from="1646570561996" duration="13954000" />
     </task>
     <servers />
   </component>

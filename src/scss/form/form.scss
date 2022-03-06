@@ -1,0 +1,54 @@
+.form {
+  .form__option {
+    .form__option-title {
+        color: #595959;
+        font-weight: bold;
+        font-size: 1.6rem;
+        line-height: 118.75%;
+        margin: 0 0 2rem 0;
+    }
+    .form__option-body {
+      display: flex;
+      &>*:not(:last-child) {
+        padding: 0 2.3rem 0 0;
+      }
+    }
+  }
+  .form__radio {
+    input {
+      &:checked {
+
+      }
+    }
+    label {
+      color: #595959;
+      font-size: 1.4rem;
+      line-height: 114%;
+    }
+
+  }
+  .form__range {
+
+  }
+  .form__tel {
+    input {
+      position: relative;
+      padding: 1.2rem;
+
+      color: #595959;
+      font-size: 1.4rem;
+      line-height: 114%;
+
+      border: .1rem solid #CCCCCC;
+      &:before {
+        content: "+7";
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: inherit;
+        font-size: inherit;
+        line-height: inherit;
+      }
+    }
+  }
+}

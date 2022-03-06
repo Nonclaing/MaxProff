@@ -131,6 +131,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ----------------------------------- */
+.form .form__option .form__option-title {
+  color: #595959;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 118.75%;
+  margin: 0 0 2rem 0;
+}
+.form .form__option .form__option-body {
+  display: flex;
+}
+.form .form__option .form__option-body > *:not(:last-child) {
+  padding: 0 2.3rem 0 0;
+}
+.form .form__radio label {
+  color: #595959;
+  font-size: 1.4rem;
+  line-height: 114%;
+}
+.form .form__tel input {
+  position: relative;
+  padding: 1.2rem;
+  color: #595959;
+  font-size: 1.4rem;
+  line-height: 114%;
+  border: 0.1rem solid #CCCCCC;
+}
+.form .form__tel input:before {
+  content: "+7";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -708,6 +744,151 @@ body, html {
   width: 100%;
   height: 100%;
   font-size: 2rem;
+}
+.main .main__header {
+  margin: 3.3rem 0 0 0;
+  background: linear-gradient(90deg, white 26.64%, rgba(0, 255, 240, 0) 100%), url("../img/main-bg.png") no-repeat 100% 0/cover;
+}
+.main .main__header .main__header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.main .main__header .main__header-container .main__header-info {
+  flex: 0 1 47%;
+}
+.main .main__header .main__header-container .main__header-info .main__header-title {
+  margin: 3rem 0 0 0;
+  content: #171616;
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 116%;
+  text-transform: uppercase;
+}
+.main .main__header .main__header-container .main__header-info .main__header-price {
+  margin: 3.1rem 0 0 0;
+  color: #171616;
+  font-weight: bold;
+  font-size: 4.4rem;
+  line-height: 118%;
+}
+.main .main__header .main__header-container .main__header-info .main__header-price span {
+  color: white;
+  font-size: 6rem;
+  line-height: 116%;
+  padding: 0 1rem;
+  background-color: #6cac3d;
+  border-radius: 1rem;
+}
+.main .main__header .main__header-container .main__header-info .main__header-properties {
+  margin: 6.4rem 0 0 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+.main .main__header .main__header-container .main__header-info .main__header-properties .main__header-property {
+  margin: 0 7.4rem 2.6rem 0;
+}
+.main .main__header .main__header-container .main__header-info .main__header-properties .main__header-property:nth-child(1) .main__header-property-img:after {
+  left: auto;
+  right: 0;
+}
+.main .main__header .main__header-container .main__header-info .main__header-properties .main__header-property:nth-child(2) .main__header-property-img:after, .main .main__header .main__header-container .main__header-info .main__header-properties .main__header-property:nth-child(3) .main__header-property-img:after {
+  left: 50%;
+  transform: translate(-50%, 10%);
+  top: auto;
+  bottom: 0;
+}
+.main .main__header .main__header-container .main__header-info .main__header-properties .main__header-property:nth-child(4) .main__header-property-img:after {
+  left: 50%;
+  transform: translate(0, -50%);
+  top: auto;
+  bottom: 0;
+}
+.main .main__header .main__header-container .main__header-info .main__header-properties .main__header-property > *:not(:last-child) {
+  margin: 0 0 0.8rem 0;
+}
+.main .main__header .main__header-container .main__header-info .main__header-properties .main__header-property .main__header-property-img {
+  max-width: 6rem;
+  min-width: 6rem;
+  position: relative;
+}
+.main .main__header .main__header-container .main__header-info .main__header-properties .main__header-property .main__header-property-img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  background-color: #6cac3d;
+  border-radius: 100%;
+  opacity: 0.7;
+}
+.main .main__header .main__header-container .main__header-info .main__header-properties .main__header-property .main__header-property-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.main .main__header .main__header-container .main__header-info .main__header-properties .main__header-property .main__header-property-text {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 116%;
+}
+.main .main__header .main__header-container .main__header-calc {
+  background-color: white;
+  border-radius: 0.7rem;
+  padding: 3.8rem 0 4.2rem 0;
+  flex: 0 1 39%;
+  margin: 0 0 2.4rem 0;
+}
+.main .main__header .main__header-container .main__header-calc .main__header-calc-title {
+  margin: 0 2.4rem 2.8rem 5.5rem;
+  contain: #171616;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 115%;
+  text-transform: uppercase;
+}
+.main .main__header .main__header-container .main__header-calc .main__header-calc-body .main__form .main__form-container {
+  padding: 0 5.3rem;
+}
+.main .main__header .main__header-container .main__header-calc .main__header-calc-body .main__form .main__form-option:not(:last-child) {
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid #D6D6D6;
+}
+.main .main__header .main__header-container .main__header-calc .main__header-calc-body .main__form .main__form-option .main__option-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1rem 0;
+}
+.main .main__header .main__header-container .main__header-calc .main__header-calc-body .main__form .main__form-info {
+  background: #F2F2F2;
+  display: flex;
+  padding: 1.7rem 5.5rem;
+  justify-content: space-between;
+  margin: 2.4rem 0 1.9rem 0;
+}
+.main .main__header .main__header-container .main__header-calc .main__header-calc-body .main__form .main__form-info .main__form-info-item {
+  color: #2d4872;
+}
+.main .main__header .main__header-container .main__header-calc .main__header-calc-body .main__form .main__form-info .main__form-info-item h5 {
+  font-size: 1.6rem;
+  line-height: 118.75%;
+}
+.main .main__header .main__header-container .main__header-calc .main__header-calc-body .main__form .main__form-info .main__form-info-item span {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 116%;
+}
+.main .main__header .main__header-container .main__header-calc .main__header-calc-body .main__form .main__form-submit-button {
+  width: 100%;
+  padding: 1.3rem 2rem;
+  color: white;
+  font-size: 1.8rem;
+  line-height: 116%;
+  border-radius: 4px;
+  background-color: #6cac3d;
 }
 
 /*# sourceMappingURL=style.css.map */
