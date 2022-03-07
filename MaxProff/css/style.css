@@ -173,10 +173,66 @@ h6 {
   padding: 0 2.3rem 0 0;
 }
 
+.form .form__radio input[type=radio] {
+  display: none;
+  -webkit-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+.form .form__radio input[type=radio]:checked + label {
+  color: #2d4872;
+}
+
+.form .form__radio input[type=radio]:checked + label:before {
+  background-color: #2d4872;
+}
+
+.form .form__radio input[type=radio]:checked + label:after {
+  border: 0.2rem solid white;
+  background-color: transparent;
+}
+
 .form .form__radio label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
   color: #595959;
   font-size: 1.4rem;
   line-height: 114%;
+  padding: 0 0 0 3rem;
+}
+
+.form .form__radio label:before,
+.form .form__radio label:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(0, -15%);
+      -ms-transform: translate(0, -15%);
+          transform: translate(0, -15%);
+  border-radius: 100%;
+  -webkit-transition: background-color 0.4s ease, border 0.4s ease;
+  -o-transition: background-color 0.4s ease, border 0.4s ease;
+  transition: background-color 0.4s ease, border 0.4s ease;
+}
+
+.form .form__radio label:before {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: #cccccc;
+}
+
+.form .form__radio label:after {
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 0.2rem solid transparent;
+  -webkit-transform: translate(15%, -4%);
+      -ms-transform: translate(15%, -4%);
+          transform: translate(15%, -4%);
+  background-color: #f2f2f2;
 }
 
 .form .form__tel input {

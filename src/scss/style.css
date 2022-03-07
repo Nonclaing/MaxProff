@@ -144,10 +144,50 @@ h1, h2, h3, h4, h5, h6 {
 .form .form__option .form__option-body > *:not(:last-child) {
   padding: 0 2.3rem 0 0;
 }
+.form .form__radio input[type=radio] {
+  display: none;
+  transition: color 0.4s ease;
+}
+.form .form__radio input[type=radio]:checked + label {
+  color: #2d4872;
+}
+.form .form__radio input[type=radio]:checked + label:before {
+  background-color: #2d4872;
+}
+.form .form__radio input[type=radio]:checked + label:after {
+  border: 0.2rem solid white;
+  background-color: transparent;
+}
 .form .form__radio label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
   color: #595959;
   font-size: 1.4rem;
   line-height: 114%;
+  padding: 0 0 0 3rem;
+}
+.form .form__radio label:before, .form .form__radio label:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, -15%);
+  border-radius: 100%;
+  transition: background-color 0.4s ease, border 0.4s ease;
+}
+.form .form__radio label:before {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: #cccccc;
+}
+.form .form__radio label:after {
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 0.2rem solid transparent;
+  transform: translate(15%, -4%);
+  background-color: #f2f2f2;
 }
 .form .form__tel input {
   position: relative;
