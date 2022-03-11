@@ -19,6 +19,7 @@ testWebP(function (support) {
 $(document).ready(function () {
     headerBurger();
     spoilersButton();
+    changeOutputRange();
 });
 // Бургер
 function headerBurger() {
@@ -69,4 +70,11 @@ function clearSpoilers(title, text) {
         title.removeClass('active');
     }
     text.removeAttr('style');
+}
+function changeOutputRange() {
+    $range = $('#myRange');
+    $range.next().html($range.val());
+    $range.bind('mousedown mousemove touchstart touchmove', function () {
+        $(this).next().html($(this).val());
+    })
 }
