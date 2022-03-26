@@ -18,8 +18,11 @@ testWebP(function (support) {
 });
 $(document).ready(function () {
     headerBurger();
+    sliders();
     spoilersButton();
     changeOutputRange();
+    changeSlideList();
+    makedDeclination();
 });
 // Бургер
 function headerBurger() {
@@ -77,4 +80,90 @@ function changeOutputRange() {
     $range.bind('mousedown mousemove touchstart touchmove', function () {
         $(this).next().html($(this).val());
     })
+}
+function changeSlideList() {
+    $button = $('.main__slider-list-button');
+    $button.click(function (event) {
+        $(this).parent().children('ul').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+    $list = $('.main__slider-list').children('ul').children('li').children('h6');
+    $subList = $('.main__slider-sublist').children('li');
+    $list.each(function (index) {
+        if ($(this).position().top >= 140) {
+            $(this).addClass('grey');
+        }
+    });
+    $subList.each(function (index) {
+        if ($(this).position().top >= 140) {
+            $(this).addClass('grey');
+        }
+    });
+}
+
+function sliders() {
+    let sliderRepair = $('.main__slider_repair');
+    let sliderExample = $('.main__slider_example')
+    sliderRepair.slick({
+        arrows: false, // кнопки перехода
+        dots: false, // точки прокрутки
+        adaptiveHeight: true, // адартивная высота
+        slidesToShow: 4, // кол0во слайдов за раз
+        slidesToScroll: 1, // кол0во слайдов за раз
+        speed: 500, // скорость прокрутки
+        easing: 'erase', // тип анимации
+        infinite: false, // бесконечный ли слайдер
+        initialSlide: 0, // место старта
+        responsive: [ // брейкпоинты
+            {
+                breakpoint: 1220,
+                settings: {
+                    slidesToShow: 3,
+                    initialSlide: 1,
+                    slidesToScroll: 1, // кол0во слайдов за раз
+                    centerMode: true,
+                    dots: true
+
+                }
+            },
+            {
+                breakpoint: 1020,
+                settings: {
+                    slidesToShow: 2,
+                    initialSlide: 1,
+                    slidesToScroll: 2, // кол0во слайдов за раз
+                    centerMode: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 660,
+                settings: {
+                    slidesToShow: 1,
+                    initialSlide: 0,
+                    slidesToScroll: 1, // кол0во слайдов за раз
+                    centerMode: true,
+                    dots: true
+                }
+            }
+        ],
+    });
+    sliderExample.slick({
+        dots: true,
+        arrows: true,
+        slidesToShow: 1,
+        speed: 500,
+        easing: 'erase',
+    });
+}
+function makedDeclination() {
+    let days = $('.day');
+    let word_array = ['first', 'second', 'third'];
+    days.each(function (index) {
+        $(this).addClass(declOfNum($(this).text(), word_array));
+    })
+}
+function declOfNum(number, titles) {
+    let cases = [2, 0, 1, 1, 1, 2];
+    return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];
 }
