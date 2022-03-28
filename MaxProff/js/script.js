@@ -16,14 +16,17 @@ testWebP(function (support) {
         document.querySelector('body').classList.add('no-webp');
     }
 });
+
 $(document).ready(function () {
     headerBurger();
+    toCalc();
     sliders();
     spoilersButton();
     changeOutputRange();
     changeSlideList();
     makedDeclination();
 });
+
 // Бургер
 function headerBurger() {
     $('.burger__button, .burger__menu-exit').click(setActive);
@@ -32,10 +35,12 @@ function headerBurger() {
             setActive();
     });
 }
+
 function setActive() {
     $('.burger__menu, .burger__button, .burger__menu-body').toggleClass('active');
     $('body').toggleClass('lock');
 }
+
 function spoilersButton() {
     $('.spoiler__title').click(function (event) {
         if (window.screen.width >= 700)
@@ -67,6 +72,7 @@ function spoilersButton() {
         $(this).next().slideToggle(300);
     });
 }
+
 function clearSpoilers(title, text) {
     if (title.hasClass('active'))
     {
@@ -74,6 +80,7 @@ function clearSpoilers(title, text) {
     }
     text.removeAttr('style');
 }
+
 function changeOutputRange() {
     $range = $('#myRange');
     $range.next().html($range.val());
@@ -81,6 +88,13 @@ function changeOutputRange() {
         $(this).next().html($(this).val());
     })
 }
+
+function toCalc() {
+    $('.header__calc-button').click(function () {
+        setActive();
+    });
+}
+
 function changeSlideList() {
     $button = $('.main__slider-list-button');
     $button.click(function (event) {
@@ -156,6 +170,7 @@ function sliders() {
         easing: 'erase',
     });
 }
+
 function makedDeclination() {
     let days = $('.day');
     let word_array = ['first', 'second', 'third'];
@@ -163,7 +178,9 @@ function makedDeclination() {
         $(this).addClass(declOfNum($(this).text(), word_array));
     })
 }
+
 function declOfNum(number, titles) {
     let cases = [2, 0, 1, 1, 1, 2];
     return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];
 }
+

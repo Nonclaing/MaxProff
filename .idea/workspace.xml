@@ -11,13 +11,14 @@
       <change beforePath="$PROJECT_DIR$/MaxProff/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MaxProff/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MaxProff/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/MaxProff/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MaxProff/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/MaxProff/js/script.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/body/body.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/body/body.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/footer/footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/main/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sliders/sliders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sliders/sliders.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/footer/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/footer/_footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/header/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/header/_header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/main/_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/main/_main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,6 +136,7 @@
       <workItem from="1647874796310" duration="2369000" />
       <workItem from="1647959921460" duration="3619000" />
       <workItem from="1648293747703" duration="16650000" />
+      <workItem from="1648462100956" duration="17559000" />
     </task>
     <servers />
   </component>
