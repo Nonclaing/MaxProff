@@ -1876,11 +1876,54 @@ body, html {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 48em) {
+  .footer .footer__body {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 26.5625em) {
+  .footer .footer__body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3.5rem 0 5rem 0;
+  }
+  .footer .footer__body > *:not(:first-child) {
+    margin-bottom: 3rem;
+  }
+}
 .footer .footer__body .footer__body-item {
   display: flex;
   min-height: 100%;
   flex-direction: column;
+}
+@media (max-width: 48em) {
+  .footer .footer__body .footer__body-item {
+    flex: 0 0 33.33%;
+  }
+}
+@media (max-width: 26.5625em) {
+  .footer .footer__body .footer__body-item {
+    text-align: center;
+  }
+}
+.footer .footer__body .footer__body-item > *:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.footer .footer__body .footer__body-item.footer__body-item_logo {
   justify-content: space-between;
+}
+@media (max-width: 48em) {
+  .footer .footer__body .footer__body-item.footer__body-item_logo {
+    justify-content: left;
+    align-items: start;
+    flex-direction: row;
+    flex: 1 1 100%;
+    order: 5;
+  }
+  .footer .footer__body .footer__body-item.footer__body-item_logo > *:not(:last-child) {
+    margin: 0 1rem 0 0;
+  }
 }
 .footer .footer__payment .footer__payment-title {
   font-size: 1.3rem;
@@ -1890,6 +1933,11 @@ body, html {
 }
 .footer .footer__payment .footer__payment-list {
   display: flex;
+}
+@media (max-width: 26.5625em) {
+  .footer .footer__payment .footer__payment-list {
+    justify-content: center;
+  }
 }
 .footer .footer__payment .footer__payment-list li {
   width: 1.6rem;
@@ -1937,6 +1985,11 @@ body, html {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 26.5625em) {
+  .footer .footer__contacts-list {
+    align-items: center;
+  }
+}
 .footer .footer__contacts-list li {
   display: flex;
 }
@@ -1974,19 +2027,64 @@ body, html {
   color: #6cac3d;
   text-decoration: underline #6cac3d;
 }
+.footer .footer__social-list {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 26.5625em) {
+  .footer .footer__social-list {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.footer .footer__social-list .footer__social-list-item {
+  display: flex;
+}
+.footer .footer__social-list .footer__social-list-item:not(:last-child) {
+  margin: 0 0.8rem 0 0;
+}
+.footer .footer__social-list .footer__social-list-item a {
+  max-width: 3rem;
+  max-height: 3rem;
+}
+.footer .footer__social-list .footer__social-list-item a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .footer .footer__confirm {
   border-top: 1px solid #CBCBCB;
   padding: 2.1rem 0 2.8rem 0;
+}
+@media (max-width: 26.5625em) {
+  .footer .footer__confirm {
+    padding: 2.7rem 0 2.1rem 0;
+  }
 }
 .footer .footer__confirm .footer__confirm-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 26.5625em) {
+  .footer .footer__confirm .footer__confirm-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .footer__confirm .footer__confirm-container > *:not(:first-child) {
+    margin-top: 2.4rem;
+  }
+}
 .footer .footer__confirm .footer__confirm-item {
   font-size: 1.4rem;
   line-height: 114%;
   color: #CBCBCB;
+}
+@media (max-width: 26.5625em) {
+  .footer .footer__confirm .footer__confirm-item {
+    text-align: center;
+  }
 }
 .footer .footer__confirm .footer__confirm-item:not(:last-child) {
   padding: 0 1rem 0 0;
@@ -1995,22 +2093,17 @@ body, html {
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 26.5625em) {
+  .footer .footer__confirm .footer__confirm-info {
+    flex-direction: column;
+  }
+}
 .footer .footer__confirm .footer__confirm-info a {
   white-space: nowrap;
 }
 .footer .footer__confirm .footer__confirm-link {
   text-decoration-line: underline;
   color: white;
-}
-.footer .footer__social-list {
-  display: flex;
-  align-items: center;
-}
-.footer .footer__social-list .footer__social-list-item {
-  display: flex;
-}
-.footer .footer__social-list .footer__social-list-item:not(:last-child) {
-  margin: 0 0.8rem 0 0;
 }
 .footer .footer__confirm-map {
   color: inherit;
