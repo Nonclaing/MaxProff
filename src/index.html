@@ -5,17 +5,1388 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Gulp</title>
+    <title>MaxProff</title>
 </head>
 <body>
 <div class="wrapper">
-    @@include('./templates/header/_header.html')
-    @@include('./templates/main/_main.html')
-    @@include('./templates/footer/_footer.html')
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <div class="header__burger burger">
+                    <div class="header__burger-body burger__body">
+                        <div class="burger__button">
+                            <span></span>
+                        </div>
+                        <div class="header__burger-img">
+                            <img src="assets/images/MaxProff.svg" alt="">
+                        </div>
+                        <a href="tel:+72332222222" class="header__burger-call-button button">
+                            <img src="assets/images/call.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="burger__menu">
+                        <div class="burger__menu-exit">
+                            <span></span>
+                        </div>
+                        <div class="header__burger-menu burger__menu-body">
+                            <div class="header__logo">
+                                <img src="assets/images/MaxProff.svg" alt="">
+                            </div>
+                            <div class="header__calc-button">
+                                <a href="#calc" class="button button_white">Калькулятор ремонта</a>
+                            </div>
+                            <nav class="header__buttons">
+                                <ul class="header__buttons-list">
+                                    <li><a href="">Цены</a></li>
+                                    <li><a href="">Услуги</a></li>
+                                    <li><a href="">Портфолио</a></li>
+                                    <li><a href="">Акции</a></li>
+                                    <li><a href="">Преимущества</a></li>
+                                    <li><a href="">Блог</a></li>
+                                    <li><a href="">Контакты</a></li>
+                                </ul>
+                            </nav>
+                            <div class="header__contacts">
+                                <div class="header__contacts-number">
+                                    <a href="tel:+72332222222" class="header__telephone">
+                                        +7 (233) 222-22-22
+                                    </a>
+                                    <span class="header__contacts-text">
+                                     08:00 - 22:00, без выходных
+                                </span>
+                                </div>
+                                <div class="header__contacts-messengers">
+                                    <a href="">
+                                        <img src="assets/images/viber.svg" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img src="assets/images/whatsapp.svg" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img src="assets/images/telegram.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header__contacts-call">
+                                <a href="tel:+72332222222" class="button button_white">Заказать звонок</a>
+                            </div>
+                            <nav class="header__menu menu">
+                                <ul class="header__list menu__list">
+                                    <li>
+                                        <a class="header__link menu__link menu__link-arrow spoiler__title">
+                                            <span>Ремонт квартир</span>
+                                        </a>
+                                        <ul class="header__sub-menu sub-menu__list spoiler__text">
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Черновой</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link"
+                                                   href="">Косметический</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Капитальный</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Элитный</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">В
+                                                    новостройках</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Студии</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Вторичное
+                                                    жилье</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="header__link menu__link menu__link-arrow spoiler__title">
+                                            <span>Дизайн интерьера</span>
+                                        </a>
+                                        <ul class="header__sub-menu sub-menu__list">
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Дизайн кухни</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Дизайн
+                                                    спальни</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Дизайн
+                                                    гостиной</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Дизайн
+                                                    детской</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Дизайн
+                                                    санузла</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Дизайн
+                                                    коридора</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Дизайн
+                                                    балкона</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="header__link menu__link menu__link-arrow spoiler__title">
+                                            <span>Ремонт комнат</span>
+                                        </a>
+                                        <ul class="header__sub-menu sub-menu__list">
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Кухни</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Спальни</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Гостиная</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Детские</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Санузлы</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Коридоры</a>
+                                            </li>
+                                            <li>
+                                                <a class="header__sub-menu-link sub-menu__link" href="">Балконы</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="header__link menu__link" href="">
+                                            <span>Дома и коттеджи</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="header__link menu__link" href="">
+                                            <span>Прочие услуги</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <main class="main__header">
+            <div class="main__header-container container">
+                <div class="main__header-info-container">
+                    <article class="main__header-info">
+                        <h1 class="main__header-title">
+                            РЕМОНТ КВАРТИР В МОСКВЕ И МО
+                        </h1>
+                        <h2 class="main__header-price">
+                            от <span>2450</span> руб/м2
+                        </h2>
+                        <section class="main__header-properties">
+                            <article class="main__header-property">
+                                <div class="main__header-property-img">
+                                    <img src="assets/images/cooperation.png" alt="">
+                                </div>
+                                <div class="main__header-property-text">
+                                    Оплата по факту приема работ
+                                </div>
+                            </article>
+                            <article class="main__header-property">
+                                <div class="main__header-property-img">
+                                    <img src="assets/images/consent.png" alt="">
+                                </div>
+                                <div class="main__header-property-text">
+                                    Замер и составление сметы <span>БЕСПЛАТНО</span>
+                                </div>
+                            </article>
+                            <article class="main__header-property">
+                                <div class="main__header-property-img">
+                                    <img src="assets/images/builder.png" alt="">
+                                </div>
+                                <div class="main__header-property-text">
+                                    Выезд сметчика
+                                </div>
+                            </article>
+                            <article class="main__header-property">
+                                <div class="main__header-property-img">
+                                    <img src="assets/images/guarantee.png" alt="">
+                                </div>
+                                <div class="main__header-property-text">
+                                    Гарантия 3 года
+                                </div>
+                            </article>
+                        </section>
+                    </article>
+                </div>
+                <div class="main__header-calc-container">
+                    <article id="calc" class="main__header-calc">
+                        <h3 class="main__header-calc-title">
+                            рассчитайте стоимость ремонта
+                        </h3>
+                        <div class="main__header-calc-body">
+                            <form action="" class="main__form form">
+                                <div class="main__form-container">
+                                    <section class="main__form-option form__option">
+                                        <h4 class="form__option-title">Вид ремонта:</h4>
+                                        <div class="main__option-body form__option-body">
+                                            <div class="form__radio">
+                                                <input type="radio" id="repairType1" name="repairType" checked>
+                                                <label for="repairType1">Косметический</label>
+                                            </div>
+                                            <div class="form__radio">
+                                                <input type="radio" id="repairType2" name="repairType">
+                                                <label for="repairType2">Капитальный</label>
+                                            </div>
+                                            <div class="form__radio">
+                                                <input type="radio" id="repairType3" name="repairType">
+                                                <label for="repairType3">Под ключ</label>
+                                            </div>
+                                            <div class="form__radio">
+                                                <input type="radio" id="repairType4" name="repairType">
+                                                <label for="repairType4">Дизайнерский</label>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="main__form-option form__option">
+                                        <h4 class="form__option-title">Тип вашей недвижимости:</h4>
+                                        <div class="main__option-body form__option-body">
+                                            <div class="form__radio">
+                                                <input type="radio" id="propertyType1" name="propertyType" checked>
+                                                <label for="propertyType1">Новостройка</label>
+                                            </div>
+                                            <div class="form__radio">
+                                                <input type="radio" id="propertyType2" name="propertyType">
+                                                <label for="propertyType2">Вторичное жилье</label>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="main__form-option form__option">
+                                        <h4 class="form__option-title">Количество комнат</h4>
+                                        <div class="form__option-body">
+                                            <div class="form__radio">
+                                                <input type="radio" id="roomsCount1" name="roomsCount" checked>
+                                                <label for="roomsCount1">1</label>
+                                            </div>
+                                            <div class="form__radio">
+                                                <input type="radio" id="roomsCount2" name="roomsCount">
+                                                <label for="roomsCount2">2</label>
+                                            </div>
+                                            <div class="form__radio">
+                                                <input type="radio" id="roomsCount3" name="roomsCount">
+                                                <label for="roomsCount3">3</label>
+                                            </div>
+                                            <div class="form__radio">
+                                                <input type="radio" id="roomsCount4" name="roomsCount">
+                                                <label for="roomsCount4">4</label>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="main__form-option form__option">
+                                        <h4 class="form__option-title">Площадь, м2:</h4>
+                                        <div class="form__option-body">
+                                            <div class="form__range">
+                                                <input type="range" min="33" max="200" value="50" class="slider"
+                                                       id="myRange">
+                                                <output for="myRange" id="outputRange"></output>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="main__form-info">
+                                    <div class="main__form-info-item">
+                                        <h5>Срок ремонта:</h5>
+                                        <span>до 34 дней</span>
+                                    </div>
+                                    <div class="main__form-info-item">
+                                        <h5>Скидка составит:</h5>
+                                        <span>23 765 руб</span>
+                                    </div>
+                                </div>
+                                <div class="main__form-container">
+                                    <section class="main__form-option form__option">
+                                        <h4 class="form__option-title">Введите номер телефона:</h4>
+                                        <div class="form__option-body main__form-option-submit">
+                                            <div class="form__tel">
+                                                <span></span>
+                                                <input type="tel">
+                                            </div>
+                                            <button class="main__form-submit-button" type="submit">Заказать</button>
+                                        </div>
+                                    </section>
+                                </div>
+                            </form>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+        <div class="main__body">
+            <div class="main__body-bg">
+                <div class="main__body-container container">
+                    <section class="main__section main__section_repair section">
+                        <h2 class="section__title">
+                            Цены на ремонт
+                        </h2>
+                        <article class="main__section-body main__section-body_repair section__body">
+                            <div class="main__slider slider-repair slider swiper">
+                                <div class="slider-repair__wrapper slider__wrapper swiper-wrapper">
+                                    <section class="slider-repair__item slider__item swiper-slide">
+                                        <div class="slider-repair__header">
+                                            <div class="slider-repair__header-img">
+                                                <img src="assets/images/main-bg.png" alt="">
+                                            </div>
+                                            <div class="slider-repair__header-text">
+                                                <h5 class="slider-repair__title">
+                                                    Косметический
+                                                </h5>
+                                                <span>от <span>5</span> дней</span>
+                                            </div>
+                                        </div>
+                                        <div class="slider-repair__body">
+                                            <div class="slider-repair__description">
+                                                <p>
+                                                    Такой тип ремонта подойдёт для того чтобы «освежить» ремонт в
+                                                    квартире: заменить
+                                                    покрытие стен, пола и потолка без предварительной подготовки
+                                                </p>
+                                            </div>
+                                            <div class="slider-repair__list opening-list">
+                                                <ul>
+                                                    <li>
+                                                        <h6>Демонтаж</h6>
+                                                        <ul class="slider-repair__sublist">
+                                                            <li>Демонтаж старых покрытий</li>
+                                                            <li>Демонтаж старой электрики</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h6>Черновые работы</h6>
+                                                        <ul class="slider-repair__sublist">
+                                                            <li>Грунтовка стен и пола</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h6>Чистовые работы</h6>
+                                                        <ul class="slider-repair__sublist">
+                                                            <li>Lorem ipsum dolor.</li>
+                                                            <li>Lorem ipsum dolor.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <div class="slider-repair__list-button opening-list__button">
+                                                    <a>Список работ</a>
+                                                </div>
+                                            </div>
+                                            <div class="slider-repair__price">
+                                                <span class="slider-repair__old-price">от <span>3 245</span> руб/м2</span>
+                                                <span class="slider-repair__new-price">от <span>2 450</span> руб/м2</span>
+                                            </div>
+                                            <div class="slider-repair__button">
+                                                <a class="button" href="">Получить смету</a>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="slider-repair__item slider__item swiper-slide">
+                                        <div class="slider-repair__header">
+                                            <div class="slider-repair__header-img">
+                                                <img src="assets/images/main-bg.png" alt="">
+                                            </div>
+                                            <div class="slider-repair__header-text">
+                                                <h5 class="slider-repair__title">
+                                                    Капитальный
+                                                </h5>
+                                                <span>от <span>14</span> дней</span>
+                                            </div>
+                                        </div>
+                                        <div class="slider-repair__body">
+                                            <div class="slider-repair__description">
+                                                <p>
+                                                    Такой тип ремонта подойдет, если требуется отремонтировать
+                                                    квартиру: выровнять
+                                                    стены, сделать стяжку полов, проложить инженерию и выполнить
+                                                    чистовую отделку.
+                                                </p>
+                                            </div>
+                                            <div class="slider-repair__list opening-list">
+                                                <ul>
+                                                    <li>
+                                                        <h6>Демонтаж</h6>
+                                                        <ul class="slider-repair__sublist">
+                                                            <li>Демонтаж старых покрытий</li>
+                                                            <li>Демонтаж старой электрики</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h6>Черновые работы</h6>
+                                                        <ul class="slider-repair__sublist">
+                                                            <li>Грунтовка стен и пола</li>
+                                                            <li>Шпатлевка и штукатурка стен</li>
+                                                            <li>Устройство наливных полов</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h6>Чистовые работы</h6>
+                                                        <ul class="slider-repair__sublist">
+                                                            <li>Lorem ipsum dolor.</li>
+                                                            <li>Lorem ipsum dolor.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <div class="slider-repair__list-button opening-list__button">
+                                                    <a>Список работ</a>
+                                                </div>
+                                            </div>
+                                            <div class="slider-repair__price">
+                                    <span class="slider-repair__old-price">
+                                       от <span>5 445</span> руб/м2
+                                    </span>
+                                                <span class="slider-repair__new-price">
+                                       от <span>4 950</span> руб/м2
+                                    </span>
+                                            </div>
+                                            <div class="slider-repair__button">
+                                                <a class="button" href="">Получить смету</a>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="slider-repair__item slider__item swiper-slide">
+                                        <div class="slider-repair__header">
+                                            <div class="slider-repair__header-img">
+                                                <img src="assets/images/main-bg.png" alt="">
+                                            </div>
+                                            <div class="slider-repair__header-text">
+                                                <h5 class="slider-repair__title">
+                                                    Под ключ
+                                                </h5>
+                                                <span>
+                                        от <span>11</span> дней
+                                    </span>
+                                            </div>
+                                        </div>
+                                        <div class="slider-repair__body">
+                                            <div class="slider-repair__description">
+                                                <p>
+                                                    Ремонт класса «евро» — капитальный ремонт с применением современных
+                                                    отделочных
+                                                    материалов и стандартов, включающий перепланировку.
+                                                </p>
+                                            </div>
+                                            <div class="slider-repair__list opening-list">
+                                                <ul>
+                                                    <li>
+                                                        <h6>Демонтаж</h6>
+                                                        <ul class="slider-repair__sublist">
+                                                            <li>Демонтаж старых покрытий</li>
+                                                            <li>Демонтаж старой электрики</li>
+                                                            <li>Демонтаж дверей</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h6>Черновые работы</h6>
+                                                        <ul class="slider-repair__sublist">
+                                                            <li>Грунтовка стен и пола</li>
+                                                            <li>Шпатлевка и штукатурка стен</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h6>Чистовые работы</h6>
+                                                        <ul class="slider-repair__sublist">
+                                                            <li>Lorem ipsum dolor.</li>
+                                                            <li>Lorem ipsum dolor.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <div class="slider-repair__list-button opening-list__button">
+                                                    <a>Список работ</a>
+                                                </div>
+                                            </div>
+                                            <div class="slider-repair__price">
+                                    <span class="slider-repair__old-price">
+                                        от <span>5 995</span> руб/м2
+                                    </span>
+                                                <span class="slider-repair__new-price">
+                                        от <span>5 450</span> руб/м2
+                                    </span>
+                                            </div>
+                                            <div class="slider-repair__button">
+                                                <a class="button" href="">Получить смету</a>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="slider-repair__item slider__item swiper-slide">
+                                        <div class="slider-repair__header">
+                                            <div class="slider-repair__header-img">
+                                                <img src="assets/images/main-bg.png" alt="">
+                                            </div>
+                                            <div class="slider-repair__header-text">
+                                                <h5 class="slider-repair__title">
+                                                    Дизайнерский
+                                                </h5>
+                                                <span>
+                                        от <span>20</span> дней
+                                    </span>
+                                            </div>
+                                        </div>
+                                        <div class="slider-repair__body">
+                                            <div class="slider-repair__description">
+                                                <p>
+                                                    Дизайнерский ремонт ориентирован для настоящих ценителей комфорта,
+                                                    эстетики и
+                                                    внутреннего удобства.
+                                                </p>
+                                            </div>
+                                            <div class="slider-repair__list opening-list">
+                                                <ul>
+                                                    <li>
+                                                        <h6>Демонтаж</h6>
+                                                        <ul class="slider-repair__sublist">
+                                                            <li>Демонтаж старых покрытий</li>
+                                                            <li>Демонтаж старой электрики</li>
+                                                            <li>Демонтаж дверей</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h6>Черновые работы</h6>
+                                                        <ul class="slider-repair__sublist">
+                                                            <li>Грунтовка стен и пола</li>
+                                                            <li>Шпатлевка и штукатурка стен</li>
+                                                            <li>Шпатлевка и штукатурка стен</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h6>Чистовые работы</h6>
+                                                        <ul class="slider-repair__sublist">
+                                                            <li>Lorem ipsum dolor.</li>
+                                                            <li>Lorem ipsum dolor.</li>
+                                                            <li>Lorem ipsum dolor.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <div class="slider-repair__list-button opening-list__button">
+                                                    <a>Список работ</a>
+                                                </div>
+                                            </div>
+                                            <div class="slider-repair__price">
+                                    <span class="slider-repair__old-price">
+                                        от <span>9 800</span> руб/м2
+                                    </span>
+                                                <span class="slider-repair__new-price">
+                                        от <span>7 500</span> руб/м2
+                                    </span>
+                                            </div>
+                                            <div class="slider-repair__button">
+                                                <a class="button" href="">Получить смету</a>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="slider-repair__pagination slider__pagination  swiper-pagination"></div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+<!--            <div class="main__body-bg">-->
+<!--                <div class="container">-->
+<!--                    <section class="main__section main__section_example section">-->
+<!--                        <h2 class="section__title">-->
+<!--                            Примеры наших работ-->
+<!--                        </h2>-->
+<!--                        <article class="main__section-body main__section-body_example section__body">-->
+<!--                            <ul class="main__example-slider-buttons">-->
+<!--                                <li><a>Капиталньый</a></li>-->
+<!--                                <li><a>Косметический</a></li>-->
+<!--                                <li><a>Под ключ</a></li>-->
+<!--                                <li><a>Студии</a></li>-->
+<!--                                <li><a>Черновой</a></li>-->
+<!--                            </ul>-->
+<!--                            <div class="main__slider main__slider_example slider">-->
+<!--                                <div class="main__slider-item main__slider-item_example slider__item">-->
+<!--                                    <div class="main__slider-content">-->
+<!--                                        <div class="main__slider-images">-->
+<!--                                            <ul class="main__slider-img-list">-->
+<!--                                                <li><img src="assets/images/main-bg.png" alt=""></li>-->
+<!--                                                <li></li>-->
+<!--                                                <li></li>-->
+<!--                                                <li></li>-->
+<!--                                            </ul>-->
+<!--                                            <div class="main__slider-big-img">-->
+<!--                                                <img src="assets/images/main-bg.png" alt="">-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <ul class="main__slider-list opening-list">-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/dollar-sign.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Сумма</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="rub">272 250</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/grid.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Площадь</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="meter">43</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/calendar.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Срок</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="day">90</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/home.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Комнат</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="">3</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/map-pin.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Адрес</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="">Кулика 18</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item main__slider-list-item_sub">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/file-text.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Перечень работ</span>-->
+<!--                                                </div>-->
+<!--                                                <ul class="main__slider-sublist opening-list__sublist">-->
+<!--                                                    <li>Штукатурка стен по маякам</li>-->
+<!--                                                    <li>Грунтовка стен и потолка</li>-->
+<!--                                                    <li>Монтаж натяжных потолков</li>-->
+<!--                                                    <li>Шпатлёвка стен под обои</li>-->
+<!--                                                    <li>Окраске стен</li>-->
+<!--                                                    <li>Укладка плитки в с/у</li>-->
+<!--                                                    <li>Прокладка электрики</li>-->
+<!--                                                    <li>Установка плинтусов и откосов</li>-->
+<!--                                                </ul>-->
+<!--                                            </li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                    <div class="main__slider-button">-->
+<!--                                        <a class="button">Оставить заявку</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="main__slider-item main__slider-item_example slider__item">-->
+<!--                                    <div class="main__slider-content">-->
+<!--                                        <div class="main__slider-images">-->
+<!--                                            <ul class="main__slider-img-list">-->
+<!--                                                <li><img src="assets/images/main-bg.png" alt=""></li>-->
+<!--                                                <li></li>-->
+<!--                                                <li></li>-->
+<!--                                                <li></li>-->
+<!--                                            </ul>-->
+<!--                                            <div class="main__slider-big-img">-->
+<!--                                                <img src="assets/images/main-bg.png" alt="">-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <ul class="main__slider-list opening-list">-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/dollar-sign.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Сумма</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="rub">272 250</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/grid.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Площадь</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="meter">43</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/calendar.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Срок</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="day">90</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/home.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Комнат</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="">3</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/map-pin.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Адрес</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="">Кулика 18</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item main__slider-list-item_sub">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/file-text.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Перечень работ</span>-->
+<!--                                                </div>-->
+<!--                                                <ul class="main__slider-sublist opening-list__sublist">-->
+<!--                                                    <li>Штукатурка стен по маякам</li>-->
+<!--                                                    <li>Грунтовка стен и потолка</li>-->
+<!--                                                    <li>Монтаж натяжных потолков</li>-->
+<!--                                                    <li>Шпатлёвка стен под обои</li>-->
+<!--                                                    <li>Окраске стен</li>-->
+<!--                                                    <li>Укладка плитки в с/у</li>-->
+<!--                                                    <li>Прокладка электрики</li>-->
+<!--                                                    <li>Установка плинтусов и откосов</li>-->
+<!--                                                </ul>-->
+<!--                                            </li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                    <div class="main__slider-button">-->
+<!--                                        <a class="button">Оставить заявку</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="main__slider-item main__slider-item_example slider__item">-->
+<!--                                    <div class="main__slider-content">-->
+<!--                                        <div class="main__slider-images">-->
+<!--                                            <ul class="main__slider-img-list">-->
+<!--                                                <li><img src="assets/images/main-bg.png" alt=""></li>-->
+<!--                                                <li></li>-->
+<!--                                                <li></li>-->
+<!--                                                <li></li>-->
+<!--                                            </ul>-->
+<!--                                            <div class="main__slider-big-img">-->
+<!--                                                <img src="assets/images/main-bg.png" alt="">-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <ul class="main__slider-list opening-list">-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/dollar-sign.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Сумма</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="rub">272 250</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/grid.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Площадь</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="meter">43</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/calendar.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Срок</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="day">90</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/home.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Комнат</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="">3</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/map-pin.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Адрес</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="">Кулика 18</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item main__slider-list-item_sub">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/file-text.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Перечень работ</span>-->
+<!--                                                </div>-->
+<!--                                                <ul class="main__slider-sublist opening-list__sublist">-->
+<!--                                                    <li>Штукатурка стен по маякам</li>-->
+<!--                                                    <li>Грунтовка стен и потолка</li>-->
+<!--                                                    <li>Монтаж натяжных потолков</li>-->
+<!--                                                    <li>Шпатлёвка стен под обои</li>-->
+<!--                                                    <li>Окраске стен</li>-->
+<!--                                                    <li>Укладка плитки в с/у</li>-->
+<!--                                                    <li>Прокладка электрики</li>-->
+<!--                                                    <li>Установка плинтусов и откосов</li>-->
+<!--                                                </ul>-->
+<!--                                            </li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                    <div class="main__slider-button">-->
+<!--                                        <a class="button">Оставить заявку</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="main__slider-item main__slider-item_example slider__item">-->
+<!--                                    <div class="main__slider-content">-->
+<!--                                        <div class="main__slider-images">-->
+<!--                                            <ul class="main__slider-img-list">-->
+<!--                                                <li><img src="assets/images/main-bg.png" alt=""></li>-->
+<!--                                                <li></li>-->
+<!--                                                <li></li>-->
+<!--                                                <li></li>-->
+<!--                                            </ul>-->
+<!--                                            <div class="main__slider-big-img">-->
+<!--                                                <img src="assets/images/main-bg.png" alt="">-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <ul class="main__slider-list opening-list">-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/dollar-sign.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Сумма</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="rub">272 250</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/grid.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Площадь</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="meter">43</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/calendar.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Срок</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="day">90</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/home.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Комнат</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="">3</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/map-pin.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Адрес</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="">Кулика 18</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item main__slider-list-item_sub">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/file-text.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Перечень работ</span>-->
+<!--                                                </div>-->
+<!--                                                <ul class="main__slider-sublist opening-list__sublist">-->
+<!--                                                    <li>Штукатурка стен по маякам</li>-->
+<!--                                                    <li>Грунтовка стен и потолка</li>-->
+<!--                                                    <li>Монтаж натяжных потолков</li>-->
+<!--                                                    <li>Шпатлёвка стен под обои</li>-->
+<!--                                                    <li>Окраске стен</li>-->
+<!--                                                    <li>Укладка плитки в с/у</li>-->
+<!--                                                    <li>Прокладка электрики</li>-->
+<!--                                                    <li>Установка плинтусов и откосов</li>-->
+<!--                                                </ul>-->
+<!--                                            </li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                    <div class="main__slider-button">-->
+<!--                                        <a class="button">Оставить заявку</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="main__slider-item main__slider-item_example slider__item">-->
+<!--                                    <div class="main__slider-content">-->
+<!--                                        <div class="main__slider-images">-->
+<!--                                            <ul class="main__slider-img-list">-->
+<!--                                                <li><img src="assets/images/main-bg.png" alt=""></li>-->
+<!--                                                <li></li>-->
+<!--                                                <li></li>-->
+<!--                                                <li></li>-->
+<!--                                            </ul>-->
+<!--                                            <div class="main__slider-big-img">-->
+<!--                                                <img src="assets/images/main-bg.png" alt="">-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <ul class="main__slider-list opening-list">-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/dollar-sign.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Сумма</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="rub">272 250</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/grid.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Площадь</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="meter">43</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/calendar.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Срок</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="day">90</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/home.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Комнат</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="">3</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/map-pin.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Адрес</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="">Кулика 18</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item main__slider-list-item_sub">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/file-text.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Перечень работ</span>-->
+<!--                                                </div>-->
+<!--                                                <ul class="main__slider-sublist opening-list__sublist">-->
+<!--                                                    <li>Штукатурка стен по маякам</li>-->
+<!--                                                    <li>Грунтовка стен и потолка</li>-->
+<!--                                                    <li>Монтаж натяжных потолков</li>-->
+<!--                                                    <li>Шпатлёвка стен под обои</li>-->
+<!--                                                    <li>Окраске стен</li>-->
+<!--                                                    <li>Укладка плитки в с/у</li>-->
+<!--                                                    <li>Прокладка электрики</li>-->
+<!--                                                    <li>Установка плинтусов и откосов</li>-->
+<!--                                                </ul>-->
+<!--                                            </li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                    <div class="main__slider-button">-->
+<!--                                        <a class="button">Оставить заявку</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="main__slider-item main__slider-item_example slider__item">-->
+<!--                                    <div class="main__slider-content">-->
+<!--                                        <div class="main__slider-images">-->
+<!--                                            <ul class="main__slider-img-list">-->
+<!--                                                <li><img src="assets/images/main-bg.png" alt=""></li>-->
+<!--                                                <li></li>-->
+<!--                                                <li></li>-->
+<!--                                                <li></li>-->
+<!--                                            </ul>-->
+<!--                                            <div class="main__slider-big-img">-->
+<!--                                                <img src="assets/images/main-bg.png" alt="">-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <ul class="main__slider-list opening-list">-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/dollar-sign.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Сумма</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="rub">272 250</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/grid.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Площадь</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="meter">43</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/calendar.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Срок</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="day">90</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/home.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Комнат</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="">3</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/map-pin.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Адрес</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="">Кулика 18</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item main__slider-list-item_sub">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/file-text.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Перечень работ</span>-->
+<!--                                                </div>-->
+<!--                                                <ul class="main__slider-sublist opening-list__sublist">-->
+<!--                                                    <li>Штукатурка стен по маякам</li>-->
+<!--                                                    <li>Грунтовка стен и потолка</li>-->
+<!--                                                    <li>Монтаж натяжных потолков</li>-->
+<!--                                                    <li>Шпатлёвка стен под обои</li>-->
+<!--                                                    <li>Окраске стен</li>-->
+<!--                                                    <li>Укладка плитки в с/у</li>-->
+<!--                                                    <li>Прокладка электрики</li>-->
+<!--                                                    <li>Установка плинтусов и откосов</li>-->
+<!--                                                </ul>-->
+<!--                                            </li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                    <div class="main__slider-button">-->
+<!--                                        <a class="button">Оставить заявку</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="main__slider-item main__slider-item_example slider__item">-->
+<!--                                    <div class="main__slider-content">-->
+<!--                                        <div class="main__slider-images">-->
+<!--                                            <ul class="main__slider-img-list">-->
+<!--                                                <li><img src="assets/images/main-bg.png" alt=""></li>-->
+<!--                                                <li></li>-->
+<!--                                                <li></li>-->
+<!--                                                <li></li>-->
+<!--                                            </ul>-->
+<!--                                            <div class="main__slider-big-img">-->
+<!--                                                <img src="assets/images/main-bg.png" alt="">-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <ul class="main__slider-list opening-list">-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/dollar-sign.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Сумма</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="rub">272 250</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/grid.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Площадь</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="meter">43</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/calendar.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Срок</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="day">90</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/home.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Комнат</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="">3</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/map-pin.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Адрес</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="main__slider-list-info">-->
+<!--                                                    <span class="">Кулика 18</span>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="main__slider-list-item main__slider-list-item_sub">-->
+<!--                                                <div class="main__slider-list-title">-->
+<!--                                                    <div class="main__slider-list-title-img">-->
+<!--                                                        <img src="assets/images/file-text.svg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <span>Перечень работ</span>-->
+<!--                                                </div>-->
+<!--                                                <ul class="main__slider-sublist opening-list__sublist">-->
+<!--                                                    <li>Штукатурка стен по маякам</li>-->
+<!--                                                    <li>Грунтовка стен и потолка</li>-->
+<!--                                                    <li>Монтаж натяжных потолков</li>-->
+<!--                                                    <li>Шпатлёвка стен под обои</li>-->
+<!--                                                    <li>Окраске стен</li>-->
+<!--                                                    <li>Укладка плитки в с/у</li>-->
+<!--                                                    <li>Прокладка электрики</li>-->
+<!--                                                    <li>Установка плинтусов и откосов</li>-->
+<!--                                                </ul>-->
+<!--                                            </li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                    <div class="main__slider-button">-->
+<!--                                        <a class="button">Оставить заявку</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </article>-->
+<!--                    </section>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__body">
+                <div class="footer__body-item footer__body-item_logo">
+                    <div class="footer__logo">
+                        <img src="assets/images/MaxProff-green.svg" alt="">
+                    </div>
+                    <div class="footer__payment">
+                        <div class="footer__payment-title">
+                            <h6>Любая форма оплаты</h6>
+                        </div>
+                        <ul class="footer__payment-list">
+                            <li><img src="assets/images/cash.svg" alt=""></li>
+                            <li><img src="assets/images/sberbank.svg" alt=""></li>
+                            <li><img src="assets/images/visa.svg" alt=""></li>
+                            <li><img src="assets/images/alfa-bank.svg" alt=""></li>
+                            <li><img src="assets/images/mastercard.svg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__body-item">
+                    <div class="footer__services">
+                        <h6 class="footer__services-title">
+                            Наши услуги
+                        </h6>
+                        <ul class="footer__services-list">
+                            <li>Квартиры</li>
+                            <li>Коттеджи</li>
+                            <li>Таунхаусы</li>
+                            <li>Офисы</li>
+                            <li>Инженерные системы</li>
+                            <li>География работ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__body-item">
+                    <ul class="footer__links">
+                        <li><a href="">Портфолио</a></li>
+                        <li><a href="">Стоимость</a></li>
+                        <li><a href="">Акции</a></li>
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Статьи</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__body-item">
+                    <ul class="footer__contacts-list">
+                        <li>
+                            <div class="footer__contact-img">
+                                <img src="assets/images/phone-call.svg" alt="">
+                            </div>
+                            <div class="footer__contact-info">
+                                <span class="footer__contact-info-tel">+7 (233) 222-22-22</span>
+                                <span class="footer__contact-text">08:00 - 22:00, без выходных</span>
+                                <a class="footer__contact-tel" href="tel:+72332222222">Заказать звонок</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer__contact-img">
+                                <img src="assets/images/mail.svg" alt="">
+                            </div>
+                            <div class="footer__contact-info">
+                                <span class="footer__contact-text">Электронная почта &#64;</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer__contact-img">
+                                <img src="assets/images/map-pin-green.svg" alt="">
+                            </div>
+                            <div class="footer__contact-info">
+                                <span class="footer__contact-text">Адрес</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="footer__social-list">
+                        <li class="footer__social-list-item">
+                            <a href=""><img src="assets/images/facebook.svg" alt=""></a>
+                        </li>
+                        <li class="footer__social-list-item">
+                            <a href=""><img src="assets/images/youtube.png" alt=""></a>
+                        </li>
+                        <li class="footer__social-list-item">
+                            <a href=""><img src="assets/images/instagramm.svg" alt=""></a>
+                        </li>
+                        <li class="footer__social-list-item">
+                            <a href=""><img src="assets/images/telegramm.svg" alt=""></a>
+                        </li>
+                        <li class="footer__social-list-item">
+                            <a href=""><img src="assets/images/VK.svg" alt=""></a>
+                        </li>
+                        <li class="footer__social-list-item">
+                            <a href=""><img src="assets/images/odnoklassniki.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__confirm">
+            <div class="footer__confirm-container container">
+                <div class="footer__confirm-item">
+                    <div class="footer__confirm-info">
+                        <span>&copy;  2021 «MaxProff» </span>
+                        <a class="footer__confirm-link" href="">Правовая информация</a>
+                    </div>
+                </div>
+                <div class="footer__confirm-item">
+                    Сайт не является публичной офертой и носит информационный характер
+                </div>
+                <div class="footer__confirm-item">
+                    <div class="footer__confirm-map">
+                        <a href="">Карта сайта</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/script.js"></script>
 </body>
 </html>

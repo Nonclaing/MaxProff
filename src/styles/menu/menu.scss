@@ -1,0 +1,105 @@
+.menu {
+  color: $black_color;
+
+  .menu__list {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: white;
+
+    @media (max-width: convertPx-em(700)) {
+      flex-direction: column;
+    }
+    li {
+      position: relative;
+
+    }
+    &>li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media (min-width: convertPx-em(701)) {
+        &:hover .sub-menu__list{
+          display: block;
+        }
+      }
+      @media (max-width: convertPx-em(700)) {
+        flex-direction: column;
+        width: 100%;
+        justify-content: left;
+        align-items: start;
+        &:not(:last-child) {
+          margin: 0 0 2rem 0;
+        }
+        &.active {
+          .menu__link {
+            span{
+              &:after {
+                transition: all 0.4s ease;
+                transform: translate(0, -50%) rotate(0deg);
+              }
+            }
+          }
+        }
+      }
+    }
+    .menu__link {
+      position: relative;
+      @media (max-width: convertPx-em(700)) {
+        span {
+          padding: 0 0 0 2rem;
+        }
+      }
+    }
+    .menu__link-arrow {
+      span {
+        display: inline-block;
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          display: inline-block;
+          vertical-align: middle;
+          width: 1.2rem;
+          height: 1.2rem;
+          top: 50%;
+          left: 100%;
+          margin: 0 0 0 0.6rem;
+          transform: translate(0, -50%);
+          transition: all 0.4s ease;
+          background: url('~@img/down-arrow.svg') no-repeat center / contain;
+          @media (max-width: convertPx-em(700)) {
+            left: 0;
+            transform: translate(0, -50%) rotate(90deg);
+            margin: 0;
+          }
+        }
+      }
+    }
+    .sub-menu__list {
+      background-color: white;
+      display: none;
+      position: absolute;
+      width: fit-content;
+      min-width: 100%;
+      top: 1rem;
+      left: 0;
+      box-shadow: 0 0 1rem rgba(190, 190, 190, 0.25);
+      @media (max-width: convertPx-em(700)) {
+        top: 0;
+        position: relative;
+      }
+      li {
+
+      }
+      .sub-menu__link {
+        color: black;
+      }
+    }
+  }
+}
