@@ -193,11 +193,11 @@
           margin: 0 0 2.4rem 0;
           @media (max-width: convertPx-em(1000)) {
             width: 100%;
-            padding: 3.8rem 0 6.2rem 0;
+            padding: 3.8rem 0 0 0;
             margin: 0;
           }
           @media (max-width: convertPx-em(550)) {
-            padding: 3.6rem 0 2.9rem 0;
+            padding: 3.6rem 0 0 0;
             margin: 0;
           }
           .main__header-calc-title {
@@ -372,6 +372,14 @@
 
         &:not(:last-child) {
           margin-bottom: 4.8rem;
+        }
+
+        @media (max-width: convertPx-em(768)) {
+          margin-top: 1em;
+
+          &:not(:last-child) {
+            margin-bottom: 4.4rem;
+          }
         }
       }
     }
