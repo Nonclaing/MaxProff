@@ -48,55 +48,28 @@ const swiperRepair = new Swiper('.slider-repair', {
     },
 });
 
-// const swiperExample = new Swiper('.slider-example', {
-//     ...defaultOptions,
-//     slidesPerView: 1,
-//     spaceBetween: 0,
-//     watchOverflow: false,
-//     paginationType: "custom",
-//     pagination: {
-//         el: '.slider-example__pagination',
-//         clickable: true,
-//         renderBullet: (index, className) => {
-//             let names = getNameForPagination();
-//             return `<span class="${className}"></span><span>${names[index]}</span>`;
-//         },
-//     },
-//     navigation: {
-//         nextEl: '.slider-example__button-next',
-//         prevEl: '.slider-example__button-prev',
-//     },
-// });
+const swiperPreview = new Swiper('.slider-with-preview__preview', {
+    ...defaultOptions,
+    slidesPerView: 4,
+    grabCursor: false,
+    direction: 'vertical',
+    spaceBetween: 6,
+    autoHeight: true,
+});
 
-// function getNameForPagination() {
-//     let names = [];
-//     let sliders = document.getElementsByClassName('slider-example');
-//     for (let element of sliders) {
-//         let elementsInSlide = element.querySelectorAll('[data-slide-pagination]');
-//         elementsInSlide.forEach((element) => {
-//             names.push(element.getAttribute('data-slide-pagination'));
-//         });
-//     }
-//
-//     return names;
-// }
-// 1. outer loop //
-setNameForPagination();
+setNameForPaginationSliders();
 
-function setNameForPagination() {
+function setNameForPaginationSliders() {
     $(".slider-example").each(function(index, element) {
         let $this = $(this);
-        let namesArray = [];
-        // 1.1. nested loop
-        $this.find('[data-slide-pagination]').each(function(index, element) {
-            namesArray.push($(this).data("slidePagination"));
-        });
-        /* create swiper objects */
+        let namesArray = getArrayNames($this)
+
         $this.addClass(`slider-example_instance-${index}`);
         const swiperExample = new Swiper(`.slider-example_instance-${index}`, {
             ...defaultOptions,
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween: 50,
+            speed: 800,
             watchOverflow: false,
             loop: true,
             paginationType: "custom",
@@ -119,39 +92,13 @@ function setNameForPagination() {
                 prevEl: '.slider-example__button-prev',
             },
         });
-
-        // let swiperNested = new Swiper(".instance-" + index, {
-        //     direction: "vertical",
-        //     spaceBetween: 50,
-        //     keyboard: {
-        //         enabled: true
-        //     },
-        //     pagination: {
-        //         el: ".swiper-pagination-nested",
-        //         clickable: true,
-        //         renderBullet: function(index, className) {
-        //             return (
-        //                 '<span class="' +
-        //                 className +
-        //                 '">' +
-        //                 (index + 1) +
-        //                 "." +
-        //                 namesArray[index] +
-        //                 "</span>"
-        //             );
-        //         }
-        //     }
-        // });
     });
+
+    function getArrayNames($this) {
+        let namesArray = [];
+        $this.find('[data-slide-pagination]').each(function(index, element) {
+            namesArray.push($(this).data("slidePagination"));
+        });
+        return namesArray;
+    }
 }
-
-
-
-
-
-//
-// const swiperPreview = new Swiper('.slider-with-preview__preview', {
-//     ...defaultOptions,
-//     direction: 'vertical',
-//     spaceBetween: 6,
-// });
