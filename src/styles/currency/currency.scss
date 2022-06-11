@@ -1,0 +1,23 @@
+.rub {
+  &:after {
+    content: " руб.";
+  }
+}
+
+.meter {
+  &:after {
+    content: " м2";
+  }
+}
+
+.day {
+  &.first:after {
+    content: " день";
+  }
+  &.second:after {
+    content: " дня";
+  }
+  &.third:after {
+    content: " дней";
+  }
+}

@@ -10,12 +10,10 @@ import {makeDeclination} from "./components/declination";
 import {swiperRepair} from "@scripts/components/swipers";
 
 $(document).ready(function () {
-    testWebP();
     headerBurger();
     toCalc();
     spoilersButton();
     changeOutputRange();
     changeSlideList();
     makeDeclination();
-    swiperRepair();
 });

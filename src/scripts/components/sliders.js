@@ -14,12 +14,12 @@ function changeSlideList() {
     let $list = $('.opening-list').children('ul').children('li').children('h6');
     let $subList = $('.opening-list__sublist').children('li');
     $list.each(function (index) {
-        if ($(this).position().top >= 140) {
+        if ($(this).position().top >= 138) {
             $(this).addClass('grey');
         }
     });
     $subList.each(function (index) {
-        if ($(this).position().top >= 140) {
+        if ($(this).position().top >= 138) {
             $(this).addClass('grey');
         }
     });

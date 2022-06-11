@@ -1,10 +1,7 @@
 .opening-list {
-  $container_padding_left: 2.7rem;
-  $container_padding_right: 2rem;
-  padding: 1.5rem $container_padding_right 0 $container_padding_left;
   &>ul {
     position: relative;
-    max-height: 16.6rem;
+    max-height: 10rem;
     overflow: hidden;
     transition: all 0.6s ease;
     &.active {
@@ -12,15 +9,14 @@
       &>li {
         h6 {
           &.grey {
-            color: $black_color;
+            color: inherit;
           }
         }
       }
       .opening-list__sublist {
         li {
           &.grey {
-            background: url("~@img/check.svg") 0 0 no-repeat;
-            color: $black_color;
+            color: inherit;
           }
         }
       }
@@ -28,13 +24,10 @@
     &>li {
       padding-bottom: 1.9rem;
       h6 {
-        font-weight: 700;
-        font-size: 1.4rem;
-        line-height: 114%;
         padding: 0 0 0.9rem 0;
         transition: color 0.5s ease;
         &.grey {
-          color: #C4C4C4;
+          color: inherit;
         }
       }
     }
@@ -42,13 +35,8 @@
 
   .opening-list__sublist {
     li {
-      background: url("~@img/check.svg") 0 0 no-repeat;
       padding-left: 1.6rem;
-      font-weight: 400;
-      font-size: 1.4rem;
-      line-height: 114%;
       &.grey {
-        background: url("~@img/check-grey.svg") 0 0 no-repeat;
         color: #C4C4C4;
       }
       &:not(:last-child) {
@@ -58,9 +46,6 @@
   }
 
   .opening-list__button {
-    margin: 2.4rem 0 0 0;
-    display: flex;
-    justify-content: center;
     &.active {
       a {
         &:after {
@@ -71,10 +56,7 @@
     a {
       position: relative;
       cursor: pointer;
-      font-weight: 700;
-      font-size: 1.8rem;
-      line-height: 116%;
-      color: $light_blue_color;
+      color: inherit;
       &:after {
         content: "";
         position: absolute;

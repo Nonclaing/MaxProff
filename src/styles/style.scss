@@ -1,14 +1,22 @@
-@import "fonts";
-@import "global-styles/global-styles";
+//                    Глобальные стили
 @import "null-style/null-style";
+@import "global-styles/global-styles";
+@import "fonts";
+//                    Начальный стиль
 @import "body/body";
+//                    Компоненты
+@import "currency/currency";
 @import "form/form";
 @import "opening-list/opening-list";
 @import "section/section";
 @import "sliders/sliders";
 @import "button/button";
+@import "image/image";
+@import "half-list/half-list";
+@import "circle-list/circle-list";
 @import "burger/burger";
 @import "menu/menu";
+//                    Главные блоки
 @import "header/header";
 @import "main/main";
 @import "footer/footer";

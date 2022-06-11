@@ -1,0 +1,15 @@
+.circle-list {
+  li {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 129%;
+    color: $black_color;
+
+    &:before {
+      content:"·";
+      font-size: 3rem;
+      vertical-align:middle;
+      margin-right: 1rem;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.half-list {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem 0;
+
+  .half-list__item {
+    display: flex;
+
+    &>* {
+      flex: 1 1 50%;
+    }
+
+    &.half-list__item_sublist {
+      flex-wrap: wrap;
+
+      &>* {
+        flex: 1 1 100%;
+      }
+
+      .half-list__info {
+        margin-top: .6rem;
+      }
+    }
+  }
+
+  .half-list__title {
+  }
+
+  .half-list__info {
+
+  }
+
+}
