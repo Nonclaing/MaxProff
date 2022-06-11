@@ -8,7 +8,22 @@ const defaultOptions = {
     simulateTouch: true,
     grabCursor: true,
     watchOverflow: true,
+
 };
+
+const lazyOptions = {
+    preloadImages: false,
+    lazy: {
+        // Прогрузка переключения слайда
+        loadOnTransitionStart: true,
+        // Подгружать предыдущую и слуд картинку
+        loadPrevNext: true,
+    },
+    // Слежка за видимыми слайдами
+    watchSlidesProgress: true,
+    // Добавление класса видимым слайдам
+    watchSlidesVisibility: true,
+}
 
 const defaultPaginationRender = {
     renderBullet: function(index, className) {
@@ -23,6 +38,7 @@ const defaultPaginationRender = {
 
 const swiperRepair = new Swiper('.slider-repair', {
     ...defaultOptions,
+    ...lazyOptions,
     touchRatio: 1,
     spaceBetween: 21,
     speed: 1000,
@@ -50,12 +66,26 @@ const swiperRepair = new Swiper('.slider-repair', {
 
 const swiperPreview = new Swiper('.slider-with-preview__preview', {
     ...defaultOptions,
+    ...lazyOptions,
     slidesPerView: 4,
     grabCursor: false,
     direction: 'vertical',
     spaceBetween: 6,
     autoHeight: true,
+    slideToClickedSlide: true,
+
 });
+
+// const swiperContent = new Swiper('.slider-with-preview__content', {
+//     slidesPerView: 1,
+//     watchOverflow: true,
+//     spaceBetween: 0,
+//     simulateTouch: false,
+// });
+//
+// swiperContent.controller.control = swiperPreview;
+// swiperPreview.controller.control = swiperContent;
+
 
 setNameForPaginationSliders();
 
@@ -67,8 +97,11 @@ function setNameForPaginationSliders() {
         $this.addClass(`slider-example_instance-${index}`);
         const swiperExample = new Swiper(`.slider-example_instance-${index}`, {
             ...defaultOptions,
+            ...lazyOptions,
+            grabCursor: false,
+            simulateTouch: false,
             slidesPerView: 1,
-            spaceBetween: 50,
+            spaceBetween: 100,
             speed: 800,
             watchOverflow: false,
             loop: true,

@@ -358,7 +358,6 @@
   }
   .main__body {
     .main__body-container{
-      max-width: 122rem;
       margin: 0 auto;
     }
     >:nth-child(even) {
@@ -410,6 +409,7 @@
     gap: .5rem;
 
     li {
+      cursor: pointer;
       flex: 1 1 auto;
       cursor: pointer;
       background-color: #E6E6E6;

@@ -17,12 +17,12 @@ body, html{
   display: flex;
   flex-direction: column;
 }
-$container_padding: 1.5rem;
+$container_padding: 5rem;
 .container {
   width: 100%;
   min-height: 100%;
   padding: 0 $container_padding;
-  max-width: 123rem;
+  max-width: 134rem;
   margin: 0 auto;
   @media (max-width: convertPx-em(768)) {
     max-width: 65.8rem;
